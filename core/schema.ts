@@ -8,6 +8,10 @@ export const typeDefs = gql`
     email: String
   }
 
+  type Email {
+    body: String
+  }
+
   type Query {
     user(id: ID!): User
     users: [User]
@@ -15,5 +19,6 @@ export const typeDefs = gql`
 
   type Mutation {
     login(email: String!): String
+    render(mjml: String!): Email
   }
 `;

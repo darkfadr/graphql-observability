@@ -1,8 +1,8 @@
 import { mergeResolvers } from './util';
 import * as User from './user';
-// import * as ExampleDomain from './example'
+import * as Email from './email';
 
 export const resolvers = mergeResolvers(
   User,
-  //ExampleDomain
+  Email
 );
